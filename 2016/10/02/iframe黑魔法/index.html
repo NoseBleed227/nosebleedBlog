@@ -78,7 +78,7 @@
 <link href="/nosebleedBlog/css/main.css?v=5.1.2" rel="stylesheet" type="text/css" />
 
 
-  <meta name="keywords" content="Hexo, NexT" />
+  <meta name="keywords" content="iframe," />
 
 
 
@@ -94,16 +94,18 @@
 
 
 
-<meta name="description" content="成为一个有情调 有态度 够逼格的高级攻城狮~">
-<meta property="og:type" content="website">
-<meta property="og:title" content="NoseBleed的博客">
-<meta property="og:url" content="https://nosebleed227.github.io/nosebleedBlog/index.html">
+<meta name="description" content="iframe功能和用法​    iframe 元素会创建包含另外一个文档的内联框架（即行内框架）。 ​    iframe 的页面和父页面（parent）是分开的，所以它意味着，这是一个独立的区域，不受 parent 的 CSS 或者全局的 JavaScript 的影响。在一定程度上，类似于沙箱隔离（sandbox）。 ————————————一下内容转自知乎(张云龙:https://www.zh">
+<meta name="keywords" content="iframe">
+<meta property="og:type" content="article">
+<meta property="og:title" content="iframe黑魔法">
+<meta property="og:url" content="https://nosebleed227.github.io/nosebleedBlog/2016/10/02/iframe黑魔法/index.html">
 <meta property="og:site_name" content="NoseBleed的博客">
-<meta property="og:description" content="成为一个有情调 有态度 够逼格的高级攻城狮~">
+<meta property="og:description" content="iframe功能和用法​    iframe 元素会创建包含另外一个文档的内联框架（即行内框架）。 ​    iframe 的页面和父页面（parent）是分开的，所以它意味着，这是一个独立的区域，不受 parent 的 CSS 或者全局的 JavaScript 的影响。在一定程度上，类似于沙箱隔离（sandbox）。 ————————————一下内容转自知乎(张云龙:https://www.zh">
 <meta property="og:locale" content="zh-Hans">
+<meta property="og:updated_time" content="2017-09-09T08:04:29.228Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="NoseBleed的博客">
-<meta name="twitter:description" content="成为一个有情调 有态度 够逼格的高级攻城狮~">
+<meta name="twitter:title" content="iframe黑魔法">
+<meta name="twitter:description" content="iframe功能和用法​    iframe 元素会创建包含另外一个文档的内联框架（即行内框架）。 ​    iframe 的页面和父页面（parent）是分开的，所以它意味着，这是一个独立的区域，不受 parent 的 CSS 或者全局的 JavaScript 的影响。在一定程度上，类似于沙箱隔离（sandbox）。 ————————————一下内容转自知乎(张云龙:https://www.zh">
 
 
 
@@ -132,13 +134,13 @@
 
 
 
-  <link rel="canonical" href="https://nosebleed227.github.io/nosebleedBlog/"/>
+  <link rel="canonical" href="https://nosebleed227.github.io/nosebleedBlog/2016/10/02/iframe黑魔法/"/>
 
 
 
 
 
-  <title>NoseBleed的博客</title>
+  <title>iframe黑魔法 | NoseBleed的博客</title>
   
 
 
@@ -163,9 +165,7 @@
     
   
 
-  <div class="container sidebar-position-left 
-   page-home 
- ">
+  <div class="container sidebar-position-left page-post-detail ">
     <div class="headband"></div>
 
     <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
@@ -268,9 +268,9 @@
         <div class="content-wrap">
           <div id="content" class="content">
             
-  <section id="posts" class="posts-expand">
+
+  <div id="posts" class="posts-expand">
     
-      
 
   
 
@@ -300,9 +300,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/nosebleedBlog/2016/10/02/iframe黑魔法/" itemprop="url">iframe黑魔法</a></h1>
+          <h1 class="post-title" itemprop="name headline">iframe黑魔法</h1>
         
 
         <div class="post-meta">
@@ -352,9 +350,7 @@
       
 
       
-        
-          
-            <h3 id="iframe功能和用法"><a href="#iframe功能和用法" class="headerlink" title="iframe功能和用法"></a>iframe功能和用法</h3><p>​    iframe 元素会创建包含另外一个文档的内联框架（即行内框架）。</p>
+        <h3 id="iframe功能和用法"><a href="#iframe功能和用法" class="headerlink" title="iframe功能和用法"></a>iframe功能和用法</h3><p>​    iframe 元素会创建包含另外一个文档的内联框架（即行内框架）。</p>
 <p>​    iframe 的页面和父页面（parent）是分开的，所以它意味着，这是一个独立的区域，不受 parent 的 CSS 或者全局的 JavaScript 的影响。在一定程度上，类似于沙箱隔离（sandbox）。</p>
 <p>————————————一下内容转自知乎(张云龙:<a href="https://www.zhihu.com/question/20653055/answer/35387821)------------------------------------" target="_blank" rel="external">https://www.zhihu.com/question/20653055/answer/35387821)------------------------------------</a></p>
 <p>​    iframe原本的用法在现在看来是不合时宜的，问题太多了，不一一列举，但是它的其他功能却是不错的黑魔法，这里列举一些，想到了再更新：</p>
@@ -372,8 +368,6 @@
 <p>​    7. 创建一个全新的独立的宿主环境。经 <a href="">@EtherDream</a> 大神提醒，iframe还可以用于创建新的宿主环境，用于隔离或者访问原始接口及对象，比如有些前端安全的防范会覆盖一些原生的方法防止恶意调用，那我们就能通过创建一个iframe，然后从iframe中取回原始对象和方法来破解这种防范。类似的还有  <a href="">@贺师俊</a> 曾经提到的javascript裸对象创建中的一种方法：<a href="https://link.zhihu.com/?target=http%3A//hax.iteye.com/blog/1663476" target="_blank" rel="external">如何创建一个JavaScript裸对象**</a> ，一般所见即所得编辑器也是由iframe创建的.</p>
 <p>​    8. IE6下用于遮罩select。经 <a href="https://link.zhihu.com/?target=http%3A//weibo.com/u/1689516781" target="_blank" rel="external">@yaniv**</a> 提醒想起来的。曾经在ie6时代，想搞一个模态窗口，如果窗口叠加在select元素上面，是遮不住select的，为了解决这个问题，可以通过在模态窗口元素下面垫一个iframe来实现遮罩，好坑爹的ie6，还我青春韶华~~.</p>
 
-          
-        
       
     </div>
     
@@ -388,321 +382,36 @@
 
     <footer class="post-footer">
       
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="https://nosebleed227.github.io/nosebleedBlog/nosebleedBlog/2016/09/26/SEO与标签权重/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="NoseBleed">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="https://imgsa.baidu.com/forum/w%3D580/sign=b108348df4246b607b0eb27cdbf91a35/ede42df7905298227d0f531dd5ca7bcb0b46d473.jpg">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="NoseBleed的博客">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/nosebleedBlog/2016/09/26/SEO与标签权重/" itemprop="url">SEO与标签权重</a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2016-09-26T20:36:12+08:00">
-                2016-09-26
-              </time>
-            
-
-            
-
-            
-          </span>
-
+        <div class="post-tags">
           
-
+            <a href="/nosebleedBlog/tags/iframe/" rel="tag"># iframe</a>
           
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
         </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <h2 id="SEO与标签权重"><a href="#SEO与标签权重" class="headerlink" title="SEO与标签权重"></a>SEO与标签权重</h2><ul>
-<li><p><strong>strong标签是权重标签中的代表，在搜索引擎中能够得到的高度重视，</strong>主要针对锚文本连接的关键词加粗，针对体现核心意思的语句加错，<strong>一般不超过五个</strong>。通过<code>&lt;strong&gt;</code>应用到你想强调的文本或者关键词中，这部分内容将会得到读者和搜索引擎的重视。</p>
-</li>
-<li><p><strong>h1标签的作用仅次于网站标题title,</strong>当搜索引擎来爬行我们的站点时，首先，搜索引擎是先找到h1标签，然后先对h1标签里面的文字进行抓取索引，之后再抓取站点的其它内容。这个时候，如果你的站点里面有运用h1标签来优化推广关键词的话，包含在h1标签里面的关键词可以被搜索引擎分配到很大的权重，这对提高站点关键词排名效果带来很大的作用。<strong>一个页面只能出现一次h1标签，与a标签搭配使用效果更好。</strong></p>
-</li>
-<li><p>p标签表示定义一个段落，当搜索引擎读取到网页内容遇到P标签时候，立即就知道这是一个段落，而如果使用div或者br的话，就无法体现html语义化的优势了，搜索引擎就会认为整个是一段话。<strong>而且段落首句在seo中也占一部分权重.</strong></p>
-</li>
-<li><p>ul、ol标签是列表标签，一般网页中的导航，面包屑等都是相同的，如果使用ul、ol来定义的话就可以让搜索引擎知道其意义，不会造成大量重复内容。</p>
-</li>
-<li><p>base标签是为当前页面上的所有链接规定默认路径或默认地址或者默认目标，可以减少网页代码，达到优化权重，还可以使得域名统一化，集中权重。</p>
-</li>
-<li><p><strong>title标签</strong>表示一个网页的名称或一个视频的名称，或者一个连接意思的表达内容。<strong>标题中一定要出现一些关键词，但是不要大量的堆积</strong>，太多太长了反而可能会丢失关键词的权重。</p>
-</li>
-<li><p>meta标签是用来描述网页属性的语言，好的meta标签更有利于搜索引擎的收录排名，提高权重。其中最重要的有<strong>keywords和description</strong>，<code>&lt;meta name=&quot;keywords&quot; content=&quot;关键词(HTML,ASP,PHP,SQL)&quot;&gt;</code>关键词不要写太多，每个页面要写不同的关键词，避免被认为是重复页面。<code>&lt;meta name=&quot;description&quot; content=&quot;由关键词组成的短语&quot;&gt;</code>描述中最好刻意带入keywords中的相关关键词。</p>
-</li>
-<li><p>a标签是搜索引擎最敏感的标签之一，a标签是做外链内链锚文本的基础，a标签里面写上rel=”nofollow”则标签禁止权重传递。</p>
-</li>
-<li><p>HTML标签权重分值排列</p>
-<p>  <a href="http://zhannei.baidu.com/cse/search?s=17846539860057253473&amp;entry=1&amp;q=%E5%86%85%E9%83%A8%E9%93%BE%E6%8E%A5" target="_blank" rel="external">内部链接</a>文字：10分 </p>
-<p>　　标题<a href="http://zhannei.baidu.com/cse/search?s=17846539860057253473&amp;entry=1&amp;q=title" target="_blank" rel="external">title</a>：10分</p>
-<p>　　域名：7分</p>
-<p>　　H1，H2字号标题：5分</p>
-<p>　　每段首句：5分</p>
-<p>​    路径或文件名：4分</p>
-<p>　　相似度（<a href="http://zhannei.baidu.com/cse/search?s=17846539860057253473&amp;entry=1&amp;q=%E5%85%B3%E9%94%AE%E8%AF%8D%E5%A0%86%E7%A7%AF" target="_blank" rel="external">关键词堆积</a>）：4分</p>
-<p>　　每句开头：1.5分</p>
-<p>　　加粗或斜体：1分</p>
-<p>　　文本用法（内容）：1分</p>
-<p>　　<a href="http://zhannei.baidu.com/cse/search?s=17846539860057253473&amp;entry=1&amp;q=title" target="_blank" rel="external">title</a>属性：1分 （注意不是页面标题， 是<a href="http://zhannei.baidu.com/cse/search?s=17846539860057253473&amp;entry=1&amp;q=title" target="_blank" rel="external">title</a>属性， 比如a href=”” title=””）</p>
-<p>　　alt标记：0.5分</p>
-<p>　　<a href="http://zhannei.baidu.com/cse/search?s=17846539860057253473&amp;entry=1&amp;q=Meta" target="_blank" rel="external">Meta</a>描述（<a href="http://zhannei.baidu.com/cse/search?s=17846539860057253473&amp;entry=1&amp;q=Description" target="_blank" rel="external">Description</a>属性）：0.5分</p>
-<p>　　<a href="http://zhannei.baidu.com/cse/search?s=17846539860057253473&amp;entry=1&amp;q=Meta" target="_blank" rel="external">Meta</a>关键词（<a href="http://zhannei.baidu.com/cse/search?s=17846539860057253473&amp;entry=1&amp;q=Keywords" target="_blank" rel="external">Keywords</a>属性）：0.05分</p>
-</li>
-<li><p>面包屑：</p>
-<p><img src="../images/mbx.png"></p>
-</li>
-<li><p>锚文本：</p>
-<p><img src="../images/a.png">6</p>
-</li>
-</ul>
-
-          
-        
-      
-    </div>
-    
-    
-    
-
-    
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
       
 
       
       
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
       
 
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="https://nosebleed227.github.io/nosebleedBlog/nosebleedBlog/2016/09/14/Html部分标签/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="NoseBleed">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="https://imgsa.baidu.com/forum/w%3D580/sign=b108348df4246b607b0eb27cdbf91a35/ede42df7905298227d0f531dd5ca7bcb0b46d473.jpg">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="NoseBleed的博客">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/nosebleedBlog/2016/09/14/Html部分标签/" itemprop="url">Html部分标签</a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
             
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2016-09-14T21:16:20+08:00">
-                2016-09-14
-              </time>
+              <a href="/nosebleedBlog/2016/09/26/SEO与标签权重/" rel="next" title="SEO与标签权重">
+                <i class="fa fa-chevron-left"></i> SEO与标签权重
+              </a>
             
+          </div>
 
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
             
-
-            
-          </span>
-
-          
-
-          
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
+          </div>
         </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
       
 
       
-        
-          
-            <h2 id="html部分标签"><a href="#html部分标签" class="headerlink" title="html部分标签"></a>html部分标签</h2><p>1、meta标签</p>
-<ul>
-<li>charset—-字符集编码格式 例: UTF-8 国际通用字符集</li>
-<li>name—–keywords:关键词       description:页面描述</li>
-</ul>
-<p>2、表单 </p>
-<ul>
-<li><p>form标签—-用于管理所有的表单元素</p>
-</li>
-<li><p>表单系列:</p>
-<p>​    input—–text,password,radio,checkbox,hidden,button,reset,submit,image </p>
-<p>​    select—–option设置下拉框选项  selected=”selected”设置默认值</p>
-<p>​    textarea—–文本域</p>
-</li>
-</ul>
-<p>3、base标签</p>
-<ul>
-<li>写法:,统一设置当前页面上所有a的跳转方式,前提是,a标签自己本身没有设置target属性</li>
-</ul>
-<p>4、a标签(锚链接,超链接)</p>
-<ul>
-<li><p>target属性—-设置打开方式:_self当前页面打开  _blank:在新的页面打开</p>
-</li>
-<li><p>herf属性—-设置跳转的路径</p>
-</li>
-<li><p>title属性—-设置鼠标放在链接上时的文字</p>
-<p>​</p>
-</li>
-</ul>
-
-          
-        
-      
-    </div>
-    
-    
-    
-
-    
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
       
     </footer>
   </div>
@@ -712,274 +421,11 @@
   </article>
 
 
-    
-      
 
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="https://nosebleed227.github.io/nosebleedBlog/nosebleedBlog/2016/09/04/css/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="NoseBleed">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="https://imgsa.baidu.com/forum/w%3D580/sign=b108348df4246b607b0eb27cdbf91a35/ede42df7905298227d0f531dd5ca7bcb0b46d473.jpg">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="NoseBleed的博客">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/nosebleedBlog/2016/09/04/css/" itemprop="url">css三大特性</a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2016-09-04T08:45:18+08:00">
-                2016-09-04
-              </time>
-            
-
-            
-
-            
-          </span>
-
-          
-
-          
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <h2 id="Css三大特性"><a href="#Css三大特性" class="headerlink" title="Css三大特性"></a>Css三大特性</h2><h4 id="1、css的继承性"><a href="#1、css的继承性" class="headerlink" title="1、css的继承性:"></a>1、css的继承性:</h4><ul>
-<li>应用给父级元素的样式,也会作用于其后代元素上.</li>
-</ul>
-<ul>
-<li><p>只有这些属性才可以被继承(text-,font-,line-,color)</p>
-</li>
-<li><p>子类及父类共同的样式定义在父类标签中</p>
-</li>
-<li><p>继承的特殊性:  </p>
-<p>1、a标签的颜色不能从父类元素继承.如果要修改a的颜色 就直接将样式作用在a标签上</p>
-<p>2、h标签的字体大小不能继承,如果要修改那么就直接将样式作用与标签 </p>
-<p>3、div的高度如果不进行设置就为0,如果有内容,就是内容的高度,高度无法从父元素继承, 宽度从父元素继承.</p>
-</li>
-<li><p>如果子元素定义了与父元素相同的属性,那么就是子元素自己的样式起效果</p>
-</li>
-</ul>
-<h4 id="2-css的层叠性"><a href="#2-css的层叠性" class="headerlink" title="2.css的层叠性"></a>2.css的层叠性</h4><ul>
-<li>多个选择器对同一个元素的同一个属性进行不同的修饰—–这样的现象叫做CSS层叠性</li>
-</ul>
-<h4 id="3-css的优先级"><a href="#3-css的优先级" class="headerlink" title="3.css的优先级"></a>3.css的优先级</h4><ul>
-<li>前置: 当CSS的层叠性存在的时候,元素到底应用谁的样式?</li>
-<li>优先级分析—–继承 &lt; 通配符 &lt;  标签 &lt; 类选择器 &lt; ID选择器 &lt; 行内样式</li>
-<li>!important—写在属性的值后面,当这个属性存在层叠时,该属性的优先级最高  (该变数不能被继承)</li>
-</ul>
-
-          
-        
+    <div class="post-spread">
       
     </div>
-    
-    
-    
-
-    
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
   </div>
-  
-  
-  
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="https://nosebleed227.github.io/nosebleedBlog/nosebleedBlog/2016/08/02/first/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="NoseBleed">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="https://imgsa.baidu.com/forum/w%3D580/sign=b108348df4246b607b0eb27cdbf91a35/ede42df7905298227d0f531dd5ca7bcb0b46d473.jpg">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="NoseBleed的博客">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/nosebleedBlog/2016/08/02/first/" itemprop="url">first</a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2016-08-02T21:19:56+08:00">
-                2016-08-02
-              </time>
-            
-
-            
-
-            
-          </span>
-
-          
-
-          
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <p></p><h2>hello world<h2><p></p>
-<p>​                                            <img src="./images/1.jpg"></p>
-</h2></h2>
-          
-        
-      
-    </div>
-    
-    
-    
-
-    
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
-  </section>
-
-  
 
 
           </div>
@@ -987,6 +433,10 @@
 
 
           
+  <div class="comments" id="comments">
+    
+  </div>
+
 
         </div>
         
@@ -1007,8 +457,17 @@
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap" >
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview">
+            站点概览
+          </li>
+        </ul>
+      
 
-      <section class="site-overview sidebar-panel sidebar-panel-active">
+      <section class="site-overview sidebar-panel">
         <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
           <img class="site-author-image" itemprop="image"
                src="https://imgsa.baidu.com/forum/w%3D580/sign=b108348df4246b607b0eb27cdbf91a35/ede42df7905298227d0f531dd5ca7bcb0b46d473.jpg"
@@ -1061,6 +520,22 @@
 
       </section>
 
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#iframe功能和用法"><span class="nav-number">1.</span> <span class="nav-text">iframe功能和用法</span></a></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
       
 
       
@@ -1181,10 +656,10 @@
 
 
   
-    <script type="text/javascript" src="/nosebleedBlog/js/src/scrollspy.js?v=5.1.2"></script>
+  <script type="text/javascript" src="/nosebleedBlog/js/src/scrollspy.js?v=5.1.2"></script>
 <script type="text/javascript" src="/nosebleedBlog/js/src/post-details.js?v=5.1.2"></script>
 
-  
+
 
   
 

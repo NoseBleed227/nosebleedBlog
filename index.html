@@ -283,6 +283,129 @@
   
   
   <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="https://nosebleed227.github.io/nosebleedBlog/nosebleedBlog/2016/11/08/Json数据格式的转换/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="NoseBleed">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="http://static.zt.game.xoyo.com/jx3-fan-fiction-show/586b110552bcb.jpg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="NoseBleed的博客">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/nosebleedBlog/2016/11/08/Json数据格式的转换/" itemprop="url">Json数据格式的转换</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2016-11-08T23:32:24+08:00">
+                2016-11-08
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <h3 id="Json对象与Json字符串互转-4种转换方式"><a href="#Json对象与Json字符串互转-4种转换方式" class="headerlink" title="Json对象与Json字符串互转(4种转换方式)"></a>Json对象与Json字符串互转(4种转换方式)</h3><h4 id="1-jQuery插件支持的转换方式："><a href="#1-jQuery插件支持的转换方式：" class="headerlink" title="1.jQuery插件支持的转换方式："></a>1.<strong>jQuery插件支持的转换方式</strong>：</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$.parseJSON( jsonstr ); //jQuery.parseJSON(jsonstr),可以将json字符串转换成json对象</div></pre></td></tr></table></figure>
+<h4 id="2-浏览器支持的转换方式-Firefox，chrome，opera，safari，ie9，ie8-等浏览器："><a href="#2-浏览器支持的转换方式-Firefox，chrome，opera，safari，ie9，ie8-等浏览器：" class="headerlink" title="2.浏览器支持的转换方式(Firefox，chrome，opera，safari，ie9，ie8)等浏览器："></a>2.<strong>浏览器支持的转换方式</strong>(Firefox，chrome，opera，safari，ie9，ie8)等浏览器：</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">JSON.parse(jsonstr); //可以将json字符串转换成json对象 </div><div class="line">JSON.stringify(jsonobj); //可以将json对象转换成json对符串</div></pre></td></tr></table></figure>
+<h4 id="3-Javascript支持的转换方式："><a href="#3-Javascript支持的转换方式：" class="headerlink" title="3.Javascript支持的转换方式："></a>3.<strong>Javascript支持的转换方式</strong>：</h4><p>​    eval(‘(‘ + jsonstr + ‘)’); //可以将json字符串转换成json对象,注意需要在json字符外包裹一对小括号<br>​    注：ie8(兼容模式),ie7和ie6也可以使用eval()将字符串转为JSON对象，但不推荐这些方式，这种方式不安全eval会执行json串中的表达式。 </p>
+<h4 id="4-JSON官方的转换方式："><a href="#4-JSON官方的转换方式：" class="headerlink" title="4.JSON官方的转换方式："></a>4.<strong>JSON官方的转换方式</strong>：</h4><p>​    <a href="http://www.json.org/提供了一个json.js,这样ie8(兼容模式),ie7和ie6就可以支持JSON对象以及其stringify()和parse()方法；" target="_blank" rel="external">http://www.json.org/提供了一个json.js,这样ie8(兼容模式),ie7和ie6就可以支持JSON对象以及其stringify()和parse()方法；</a><br>​    可以在<a href="https://github.com/douglascrockford/JSON-js上获取到这个js，一般现在用json2.js。" target="_blank" rel="external">https://github.com/douglascrockford/JSON-js上获取到这个js，一般现在用json2.js。</a></p>
+
+          
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
     <link itemprop="mainEntityOfPage" href="https://nosebleed227.github.io/nosebleedBlog/nosebleedBlog/2016/10/18/浏览器内核/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -1144,7 +1267,7 @@
           
             <div class="site-state-item site-state-posts">
               <a href="/nosebleedBlog/archives/">
-                <span class="site-state-item-count">6</span>
+                <span class="site-state-item-count">7</span>
                 <span class="site-state-item-name">日志</span>
               </a>
             </div>
@@ -1157,7 +1280,7 @@
             
             <div class="site-state-item site-state-tags">
               
-                <span class="site-state-item-count">6</span>
+                <span class="site-state-item-count">7</span>
                 <span class="site-state-item-name">标签</span>
               
             </div>

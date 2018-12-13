@@ -1,3 +1,3 @@
 # nosebleedBlog
-这是我的第一个blog
+个人blog
 https://nosebleed227.github.io/nosebleedBlog/
